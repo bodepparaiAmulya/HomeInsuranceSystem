@@ -1,0 +1,39 @@
+Quote Checking:-
+
+/********************************************************/
+Add Quote:-
+POST http://localhost:8081/quote/CreateQuote
+
+	{
+	      "quoteId":1,
+	     "premiumType":"quater",
+		"premium":2,
+		"dwellingCoverage":1000,
+		"detachedStructureCoverage":1500,
+		"personalPropertyCoverage":2000,
+		"additionalLivingExpense":1500,
+		"medicalExpense":1500,
+		"deductibleAmount":2000,
+	      "policy":{
+	          "policyId":5
+	      },
+	      "property":{
+	        "propertyId":5
+	      }
+	  }
+	  
+	  //insert into policy(policy_id,policy_effective_date,policy_end_date,policy_status,policy_term) values(1,'04-04-2020','04-04-2021','paid',2);
+	  //insert into property values(5,2.5,1,'full',0,0,10000,'teflon',3000,2017);
+/********************************************************/
+View all Quotes:-
+GET http://localhost:8081/quote/ViewAllQuotes
+/********************************************************/
+View Quote by id:-
+GET http://localhost:8081/quote/ViewQuoteById/{id}
+/********************************************************/
+Update quote by id:
+/********************************************************/
+PUT http://localhost:8081/quote/UpdateQuote
+Delete quote by id:
+/********************************************************/
+DELETE http://localhost:8081/quote/DeleteQuote/{id}

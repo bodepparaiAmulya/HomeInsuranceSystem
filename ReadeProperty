@@ -1,0 +1,42 @@
+database name  : Property
+
+POST:
+http://localhost:8081/property/addProperty
+{
+    "property_id":100,
+    "marketValue":1000,
+    " yearBuilt":2021,
+    "squareFootage":54,
+    "dwellingStyle":5.5,
+    "roofMaterial":"Tile",
+    "garageType":"single door garage",
+    "fullBathCount":200,
+    "halfBathCount":500,
+    "hasSwimmingPool":true
+
+}
+{
+    "property_id":102,
+    "marketValue":2500,
+    " yearBuilt":2021,
+    "squareFootage":58,
+    "dwellingStyle":5.85,
+    "roofMaterial":"Tile",
+    "garageType":"double door garage",
+    "fullBathCount":250,
+    "halfBathCount":550,
+    "hasSwimmingPool":true
+
+}
+ TO ViewAllProperty:
+http://localhost:8081/property/ViewAllProperty
+
+TO VIEW PROPERTY BY ID:
+http://localhost:8081/property/ViewPropertyById/1
+
+to update:
+http://localhost:8081/property/updateProperty
+
+To delete:
+http://localhost:8081/property/DeleteProperty/2
+

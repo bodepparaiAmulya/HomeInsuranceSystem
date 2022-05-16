@@ -1,0 +1,14 @@
+User Register and Login
+POST
+http://localhost:8081/Authenticate/addUser
+{
+    "userName":"Ruchan",
+    "password":"abcd1234",
+    "role":"Admin"
+}
+
+POST
+http://localhost:8081/Authenticate/Login
+
+GET
+http://localhost:8081/Authenticate//Logout
